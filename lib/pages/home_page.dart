@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-
 class HomePage extends StatelessWidget {
-  final int days = 30;
   final String name = "Shatabhisha";
 
   @override
@@ -15,7 +13,12 @@ class HomePage extends StatelessWidget {
         title: Text("Shopping App"),
       ),
       body: Center(
-        child: Container(child: Text("Welcome to $days days of Shopping App by $name"),),
+        child: Container(
+          child: Text(
+            "Welcome to Shopping App by $name",
+            style: TextStyle(color: Colors.teal),
+          ),
+        ),
       ),
       drawer: Drawer(backgroundColor: Color.fromARGB(255, 125, 198, 254)),
     );
